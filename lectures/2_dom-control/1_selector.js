@@ -50,4 +50,30 @@ console.log('query itemAll[0]:', itemAll[0]);
 console.log('query itemAll[1]:', itemAll[1]);
 console.log('query itemAll[2]:', itemAll[2]);
 
-//Change commit comment
+//Edit content
+/*h2.textContent = '<span>Exercise</span>';
+h2.innerHTML = '<span>Excercise@@</span>';
+
+console.log(h2.textContent);
+console.log(h2.innerHTML);
+
+document.querySelector('body').innerHTML = '<strong>Exercise</strong>';
+*/
+
+//Changing attribute
+let input = document.querySelector('input');
+input.setAttribute('placeholder', 'Please enter your exercise!');
+input.setAttribute('required', '');
+input.removeAttribute('placeholder');
+input.removeAttribute('required');
+
+//Styling HTML elements
+let helloItem = document.querySelector('.hello');
+console.log('helloItem ', helloItem);
+//helloItem.style.color = 'blue';
+//helloItem.style.backgroundColor = 'pink';
+
+helloItem.classList.add('dark');
+helloItem.classList.add('one');
+helloItem.classList.add('pink', 'yellow');
+helloItem.classList.remove('dark');

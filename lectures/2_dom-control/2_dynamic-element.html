@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <script src="1_selector.js" defer></script>
+    <script src="2_dynamic-element.js" defer></script>
     <title>Selector</title>
   </head>
   <body>
@@ -12,12 +12,12 @@
       <h2 id="title">Exercise</h2>
       <form name="myForm">
         <input type="text" name="myText" placeholder="Please enter exercise" />
-        <button>Add</button>
+        <button type="button" id="before">Add to front</button>
+        <!-- <button type="button" onclick="alert('hello')">Add</button> -->
+        <button type="button" id="button">Add</button>
       </form>
       <ul class="list">
-        <li class="item">Squat</li>
-        <li class="item">Bench press</li>
-        <li class="item">Deadlift</li>
+        <li class="item" id="target">Squat</li>
       </ul>
       <p class="hello dark">Hello!</p>
     </section>
