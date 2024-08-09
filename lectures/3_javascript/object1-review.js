@@ -119,3 +119,28 @@ printPerson2(person8);
 printPerson2(person9);
 printPerson2(person10);
 printPerson2(person11);
+
+//Call By Value
+let username = '김재은';
+console.log(username);
+changeName(username);
+console.log(username); //값이 안바뀜
+
+function changeName(name) {
+  //이 안에서 변수를 생성하고 값을 넣기 때문에
+  name = '김재은';
+  console.log(name);
+}
+let person12 = {
+  name: '김재은',
+  age: 23,
+};
+//Call by Reference
+console.log('=================');
+console.log(person12);
+changePersonName(person12);
+console.log(person12);
+function changePersonName(person) {
+  person.name = '김재영';
+  person.age = '21';
+}
