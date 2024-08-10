@@ -116,18 +116,6 @@ function changeName(name) {
   console.log(name);
 }
 
-let person6 = {
-  name: '김재은',
-  age: 23,
-};
-//Call by Reference
-console.log('=================');
-console.log(person6);
-changePersonName(person6);
-console.log(person6);
-function changePersonName(person) {
-  person.name = '김재영';
-  person.age = '21';
-}
+// Spread operator(전개구문)
 
-//Spread operator(전개구문)
+// 객체 복사

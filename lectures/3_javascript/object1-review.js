@@ -144,3 +144,10 @@ function changePersonName(person) {
   person.name = '김재영';
   person.age = '21';
 }
+
+// 키 존재 여부 확인
+if ('name' in person12) {
+  console.log('존재 합니다.');
+} else {
+  console.log('존재하지 않습니다');
+}
