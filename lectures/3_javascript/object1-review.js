@@ -151,3 +151,13 @@ if ('name' in person12) {
 } else {
   console.log('존재하지 않습니다');
 }
+
+// for ...in
+const person13 = {
+  name: '홍길동',
+  age: 20,
+  job: '개발자',
+};
+for (let key in person13) {
+  console.log(`key: ${key}, value: ${person13[key]}`);
+}
